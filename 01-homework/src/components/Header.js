@@ -17,12 +17,14 @@ function Header() {
   // The curly braces allow us to pass values and expressions into our view.
   return  (
   <div className = "container">
-  <p>{text}</p>
-   <a href="hello.com">{links}</a>
-   <a href="hello.com">{work}</a>
-   <a href="hello.com">{contact}</a>
-   <a href="hello.com">{resume}</a>
+  <p style={{marginTop: '30px', fontSize: 30}}>{text}</p>
+  <div style={{marginLeft: '80%'}}>
+   <a style={{marginRight: '10px'}} href="hello.com">{links}</a>
+   <a style={{marginRight: '10px'}} href="hello.com">{work}</a>
+   <a style={{marginRight: '10px'}} href="hello.com">{contact}</a>
+   <a style={{marginRight: '10px'}} href="hello.com">{resume}</a>
+   </div>
   </div>
-  )};
+  )}; 
 
 export default Header;

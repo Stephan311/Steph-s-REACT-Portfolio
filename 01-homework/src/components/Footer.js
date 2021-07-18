@@ -15,7 +15,7 @@ function Footer() {
   // JSX is compiled by something called "Babel" into widely supported ES5 syntax.
   // The curly braces allow us to pass values and expressions into our view.
   return  (
-  <div className = "container">
+  <div className = "container" style={{marginTop: 1000, alignContent: 'center'}}>
    <a href="hello.com">{links}</a>
    <a href="hello.com">{work}</a>
    <a href="hello.com">{contact}</a>
