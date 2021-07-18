@@ -9,6 +9,9 @@ function Header() {
   const work = 'Work';
   const contact = 'Contact Me';
   const resume = 'Resume';
+  const linkstyle = { marginRight: 10 }
+  const navStyle = { backgroundColor: 'black', color: 'white', padding: 30 }
+
 
 
   // TODO: Add a comment explaining what JSX is and the significance of the curly braces
@@ -16,13 +19,13 @@ function Header() {
   // JSX is compiled by something called "Babel" into widely supported ES5 syntax.
   // The curly braces allow us to pass values and expressions into our view.
   return  (
-  <div className = "container">
+  <div className = "container" style={navStyle}>
   <p style={{marginTop: '30px', fontSize: 30}}>{text}</p>
-  <div style={{marginLeft: '80%'}}>
-   <a style={{marginRight: '10px'}} href="hello.com">{links}</a>
-   <a style={{marginRight: '10px'}} href="hello.com">{work}</a>
-   <a style={{marginRight: '10px'}} href="hello.com">{contact}</a>
-   <a style={{marginRight: '10px'}} href="hello.com">{resume}</a>
+  <div style={{marginLeft: '80%', color: 'white'}}>
+   <a style={linkstyle} href="hello.com">{links}</a>
+   <a style={linkstyle} href="hello.com">{work}</a>
+   <a style={linkstyle} href="hello.com">{contact}</a>
+   <a style={linkstyle} href="hello.com">{resume}</a>
    </div>
   </div>
   )}; 
