@@ -12,7 +12,9 @@ function Footer() {
 
   const [hello, setHello] = useState('Hello');
 
-//   setHello('wow')
+  const linkCLick = () => {
+      setHello(console.log('hello'));
+  }
 
   // TODO: Add a comment explaining what JSX is and the significance of the curly braces
   // JSX is a syntax extension to JavaScript that looks like HTML.
@@ -20,7 +22,7 @@ function Footer() {
   // The curly braces allow us to pass values and expressions into our view.
   return  (
   <div className = "container" style={{marginTop: 1000, alignContent: 'center'}}>
-   <a href="hello.com" style={linkstyle}>{links}</a>
+   <a onClick={linkCLick} href="hello.com" style={linkstyle}>{links}</a>
    <a href="hello.com" style={linkstyle}>{work}</a>
    <a href="hello.com" style={linkstyle}>{contact}</a>
    <a href="hello.com" style={linkstyle}>{resume}</a>

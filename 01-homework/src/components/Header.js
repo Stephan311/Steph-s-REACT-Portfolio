@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Project from './Project';
 
 // TODO: Add a comment explaining what a react component is
 // Components are responsible for rendering some part of an application's UI.
@@ -12,6 +13,14 @@ function Header() {
   const linkstyle = { marginRight: 10 }
   const navStyle = { backgroundColor: 'black', color: 'white', padding: 30 }
 
+  const [hello, setHello] = useState('Hello')
+
+  const linkCLick = () => {
+    setHello(Project)
+    console.log('hello')
+}
+
+
 
 
   // TODO: Add a comment explaining what JSX is and the significance of the curly braces
@@ -22,10 +31,11 @@ function Header() {
   <div className = "container" style={navStyle}>
   <p style={{marginTop: '30px', fontSize: 30}}>{text}</p>
   <div style={{marginLeft: '80%', color: 'white'}}>
-   <a style={linkstyle} href="hello.com">{links}</a>
+   <a onClick={linkCLick} style={linkstyle} href="hello.com">{links}</a>
    <a style={linkstyle} href="hello.com">{work}</a>
    <a style={linkstyle} href="hello.com">{contact}</a>
    <a style={linkstyle} href="hello.com">{resume}</a>
+   {hello}
    </div>
   </div>
   )}; 
