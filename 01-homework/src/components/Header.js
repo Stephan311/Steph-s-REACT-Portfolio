@@ -11,7 +11,7 @@ function Header() {
   const contact = 'Contact Me';
   const resume = 'Resume';
   const linkstyle = { marginRight: 10 }
-  const navStyle = { backgroundColor: 'black', color: 'white', padding: 30 }
+  const navStyle = {padding: 30 }
 
   const [hello, setHello] = useState('Hello')
 
@@ -30,11 +30,11 @@ function Header() {
   return  (
   <div className = "container" style={navStyle}>
   <p style={{marginTop: '30px', fontSize: 30}}>{text}</p>
-  <div style={{marginLeft: '80%', color: 'white'}}>
-   <a onClick={linkCLick} style={linkstyle} href="hello.com">{links}</a>
-   <a style={linkstyle} href="hello.com">{work}</a>
-   <a style={linkstyle} href="hello.com">{contact}</a>
-   <a style={linkstyle} href="hello.com">{resume}</a>
+  <div style={{marginLeft: '0%'}}>
+   <p onClick={linkCLick}>{links}</p>
+   <p style={linkstyle}>{work}</p>
+   <p style={linkstyle}>{contact}</p>
+   <p style={linkstyle} >{resume}</p>
    {hello}
    </div>
   </div>
