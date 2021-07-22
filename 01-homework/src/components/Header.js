@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Project from './Project';
+import About from './About'
 
 // TODO: Add a comment explaining what a react component is
 // Components are responsible for rendering some part of an application's UI.
@@ -20,6 +21,11 @@ function Header() {
     console.log('hello')
 }
 
+const AboutCLick = () => {
+  setHello(About)
+  console.log('hello')
+}
+
 
 
 
@@ -31,8 +37,8 @@ function Header() {
   <div className = "container" style={navStyle}>
   <p style={{marginTop: '30px', fontSize: 30}}>{text}</p>
   <div style={{marginLeft: '0%'}}>
-   <p onClick={linkCLick}>{links}</p>
-   <p style={linkstyle}>{work}</p>
+   <p onClick={AboutCLick} >{links}</p>
+   <p onClick={linkCLick} style={linkstyle}>{work}</p>
    <p style={linkstyle}>{contact}</p>
    <p style={linkstyle} >{resume}</p>
    {hello}
