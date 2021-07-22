@@ -49,13 +49,25 @@ function Project() {
 
 <div className='boxes'>
   <section className='box1' style={box1}>
-    <a href="https://stephan311.github.io/The-Ultimate-Personality-Pet-Finder/">
+    <a href="https://stephs-awesome-note-taker.herokuapp.com/">
       <div style={{width: 100}} className='box2div'>
-        <h3 style={{fontSize: 30, marginTop: -40}} className='Horiseon'> Ultimate Dog Finder</h3>
-        <p style={{position: 'relative', marginTop: -30, fontSize: 30, width: 600}} className='p2'>HTML, CSS, JS, Jquery</p>
+        <h3 style={{fontSize: 30, marginTop: -40}} className='Horiseon'>Note Taker</h3>
+        <p style={{position: 'relative', marginTop: -30, fontSize: 30, width: 600}} className='p2'>Express, Node.JS</p>
       </div>
     </a>
-    <a style={{position: 'relative', marginTop: 100, fontSize: 30, width: 600, paddingBottom: 10, paddingRight: 10, marginLeft: -105}} href="https://github.com/Stephan311/The-Ultimate-Personality-Pet-Finder" className='p21'>Github Repo</a>
+    <a style={{position: 'relative', marginTop: 70, fontSize: 30, width: 600, paddingBottom: 10, paddingRight: 10, marginLeft: -105}} href="https://github.com/Stephan311/Steph-s-Awesome-Note-Taker" className='p21'>Github Repo</a>
+  </section>
+</div>
+
+<div className='boxes'>
+  <section className='box1' style={box1}>
+    <a href="https://stephan311.github.io/Steph-s-Amazing-Javascript-Quiz/">
+      <div style={{width: 100}} className='box2div'>
+        <h3 style={{fontSize: 30, marginTop: -40}} className='Horiseon'>JS Quiz</h3>
+        <p style={{position: 'relative', marginTop: -30, fontSize: 30, width: 600}} className='p2'>HTML, JS, CSS</p>
+      </div>
+    </a>
+    <a style={{position: 'relative', marginTop: 70, fontSize: 30, width: 600, paddingBottom: 10, paddingRight: 10, marginLeft: -105}} href="https://github.com/Stephan311/Steph-s-Amazing-Javascript-Quiz" className='p21'>Github Repo</a>
   </section>
 </div>
 
