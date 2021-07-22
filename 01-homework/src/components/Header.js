@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Project from './Project';
 import About from './About'
+import Contact from './Contact'
 
 // TODO: Add a comment explaining what a react component is
 // Components are responsible for rendering some part of an application's UI.
@@ -26,6 +27,11 @@ const AboutCLick = () => {
   console.log('hello')
 }
 
+const ContactCLick = () => {
+  setHello(Contact)
+  console.log('hello')
+}
+
 
 
 
@@ -39,7 +45,7 @@ const AboutCLick = () => {
   <div style={{marginLeft: '0%'}}>
    <p onClick={AboutCLick} >{links}</p>
    <p onClick={linkCLick} style={linkstyle}>{work}</p>
-   <p style={linkstyle}>{contact}</p>
+   <p onClick={ContactCLick} style={linkstyle} >{contact}</p>
    <p style={linkstyle} >{resume}</p>
    {hello}
    </div>
