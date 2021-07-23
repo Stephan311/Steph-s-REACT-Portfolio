@@ -1,8 +1,8 @@
 {
-  "homepage": "http://Stephan311.github.io/Steph-s-REACT-Portfolio",
   "name": "01-homework",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://Stephan311.github.io/Steph-s-REACT-Portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
