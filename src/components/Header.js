@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Project from './Project';
 import About from './About'
 import Contact from './Contact'
+import './Header.css'
 
 // TODO: Add a comment explaining what a react component is
 // Components are responsible for rendering some part of an application's UI.
@@ -12,7 +13,6 @@ function Header() {
   const work = 'Work';
   const contact = 'Contact Me';
   const resume = 'Resume';
-  const linkstyle = { marginRight: 10 }
   const navStyle = {padding: 30 }
 
   const [hello, setHello] = useState('Hello')
@@ -41,12 +41,12 @@ const ContactCLick = () => {
   // The curly braces allow us to pass values and expressions into our view.
   return  (
   <div className = "container" style={navStyle}>
-  <p style={{marginTop: '30px', fontSize: 30}}>{text}</p>
-  <div style={{marginLeft: '0%'}}>
-   <p onClick={AboutCLick} >{links}</p>
-   <p onClick={linkCLick} style={linkstyle}>{work}</p>
-   <p onClick={ContactCLick} style={linkstyle} >{contact}</p>
-   <p style={linkstyle} >{resume}</p>
+  <p className="name"> {text}</p>
+  <div className = 'nav'>
+   <p className="navlink" onClick={AboutCLick} >{links}</p>
+   <p className="navlink" onClick={linkCLick} >{work}</p>
+   <p className="navlink" onClick={ContactCLick} >{contact}</p>
+   <p className="navlink" >{resume}</p> 
    {hello}
    </div>
   </div>

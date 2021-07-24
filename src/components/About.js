@@ -1,4 +1,5 @@
 import React from 'react';
+import './About.css'
 
 function About() {
 
@@ -18,6 +19,10 @@ function About() {
     We take pride in giving our clients the ability to invest money into marketing or a website witout a fear or worry that it won't work, because if it doesn't work, that money goes right back to them.
     </p>
 </section>
+
+<div className = "meImg">
+  Image of me:
+</div>
 
   </div>
   )}; 

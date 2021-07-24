@@ -8,13 +8,13 @@ function Project() {
 
 
   return  (
-  <div className = "container">
+  <div className = "containerq">
   <p>{text}</p>
 
 <div className='boxes'>
   <section className='box1' style={box1}>
     <a href="https://business-revenue-tracker.herokuapp.com/">
-      <div style={{width: 100}} className='box1div'>
+      <div style={{width: 100, height: 10000}} className='box1div'>
         <h3 style={{fontSize: 30}} className='Horiseon'> Revenue Tracker</h3>
         <p style={{position: 'relative', marginTop: -30, fontSize: 30, width: 600}} className='p2'>Express/Node/SQL/Handlebars</p>
       </div>
