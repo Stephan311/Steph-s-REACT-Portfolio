@@ -19,17 +19,17 @@ function Header() {
 
   const linkCLick = () => {
     setHello(Project)
-    console.log('hello')
+
 }
 
 const AboutCLick = () => {
   setHello(About)
-  console.log('hello')
+
 }
 
 const ContactCLick = () => {
   setHello(Contact)
-  console.log('hello')
+
 }
 
 
@@ -46,10 +46,12 @@ const ContactCLick = () => {
    <p className="navlink" onClick={AboutCLick} >{links}</p>
    <p className="navlink" onClick={linkCLick} >{work}</p>
    <p className="navlink" onClick={ContactCLick} >{contact}</p>
-   <p className="navlink" >{resume}</p> 
-   {hello}
+   <a className="navlink" href="https://drive.google.com/file/d/1LfjBi3Evg_rSrEAMPTGaVqN5A8RJWWYi/view?usp=sharing" >{resume}</a> 
+   <p className = "hello">{hello}</p>
    </div>
+
   </div>
+  
   )}; 
 
 export default Header;
