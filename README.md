@@ -5,7 +5,7 @@ In this assignment, I was tasked with creating a REACT Portfolio. This is a port
 
 Link to program: https://stephan311.github.io/Steph-s-REACT-Portfolio/
 
-Link to repo:
+Link to repo: https://github.com/Stephan311/Steph-s-REACT-Portfolio
 
 Screenshot of app:
 
