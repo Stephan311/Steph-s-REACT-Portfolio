@@ -20,9 +20,6 @@ function About() {
     </p>
 </section>
 
-<div className = "meImg">
-  Image of me:
-</div>
 
   </div>
   )}; 
